@@ -874,6 +874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thing: {fileID: 3735384148902178621}
   questUI: {fileID: 3735384150067794429}
+  minimap: {fileID: 3735384149926128293}
   player: {fileID: 3735384148834710065}
 --- !u!1 &3735384148922171665
 GameObject:

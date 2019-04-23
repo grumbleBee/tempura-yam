@@ -8,6 +8,7 @@ public class InventoryUIController : MonoBehaviour
 {
     public RectTransform thing;
     public RectTransform questUI;
+    public RectTransform minimap;
     bool open;
     public GameObject player;
     RigidbodyFirstPersonController controller;
@@ -25,11 +26,13 @@ public class InventoryUIController : MonoBehaviour
             if(!open){
                 thing.DOAnchorPosY(0f, 1f);
                 questUI.DOAnchorPosY(-50f, 1f);
+                minimap.DOAnchorPosX(85f, 1f);
                 controller.mouseLook.SetCursorLock(false);
                 open = true;
             }else{
                 thing.DOAnchorPosY(1000f, 1f);
                 questUI.DOAnchorPosY(50f, 1f);
+                minimap.DOAnchorPosX(-85f, 1f);
                 controller.mouseLook.SetCursorLock(true);
                 open = false;
             }
