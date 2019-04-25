@@ -76,6 +76,8 @@ public class TimeManager : MonoBehaviour
             if(toRemove != null){
                 inventory.RemoveItem(questManager.GetQuest(dayCount).resultItemID);
                 dayCount++;
+            } else if(questManager.GetQuest(dayCount).resultItemID == 0){
+                dayCount++;
             }
         }
     }
