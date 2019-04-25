@@ -23,6 +23,14 @@ public class TimeManager : MonoBehaviour
     private DayState dayState;
     private DayState prevState;
 
+    public DayState getCurrentState(){
+        return dayState;
+    }
+
+    public DayState getPrevState(){
+        return prevState;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,7 +66,7 @@ public class TimeManager : MonoBehaviour
             questUI.WriteToUI(questManager.GetQuest(dayCount).description);
         }
         else{
-            questUI.WriteToUI("Great job!");
+            questUI.WriteToUI("Excellent work!");
         }
         foreach(Spawn spawner in spawners){
             if(spawner.transform.childCount == 0){

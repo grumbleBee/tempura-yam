@@ -79,8 +79,25 @@ public class ItemDatabase : MonoBehaviour {
             //-------------------------------------//
             //              POTIONS
             //------------------------------------//
-            //dame's harlequin + cutleaf rosemary = 
-            new Item(13, "Sleep Serum", "Smells sweet.", Resources.Load<Sprite>("Potions/Bottle8"),
+            new Item(13, "Delicious Beverage", "My favorite!", Resources.Load<Sprite>("Potions/Bottle8"),
+            new Dictionary<string, int> {
+            }),
+            new Item(14, "Sight Vial", "Potion to improve vision.", Resources.Load<Sprite>("Potions/Bottle3"),
+            new Dictionary<string, int> {
+            }),
+            new Item(15, "Purification Potion", "Useful for disinfecting.", Resources.Load<Sprite>("Potions/Bottle12"),
+            new Dictionary<string, int> {
+            }),
+            new Item(16, "Healing Flask", "Good for ailments of all kinds!", Resources.Load<Sprite>("Potions/Bottle10"),
+            new Dictionary<string, int> {
+            }),
+            new Item(17, "Philter of Strength", "Improves strength, but tastes awful.", Resources.Load<Sprite>("Potions/Bottle9"),
+            new Dictionary<string, int> {
+            }),
+            new Item(18, "Potion of Growth", "Encourages growth.", Resources.Load<Sprite>("Potions/Bottle7"),
+            new Dictionary<string, int> {
+            }),
+            new Item(19, "Vial of Vitality", "Complicated recipe, lifesaving results.", Resources.Load<Sprite>("Potions/Bottle16"),
             new Dictionary<string, int> {
             })
         };

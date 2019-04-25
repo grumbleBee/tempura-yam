@@ -31,25 +31,40 @@ public class CraftRecipeDatabase : MonoBehaviour {
         //1234567
         recipes = new List<CraftRecipe>()
         {
-            //red and yellow make orange
-            new CraftRecipe(2,
+            //tea
+            new CraftRecipe(13,
             new int[] {
-                1,3,0,0,0,0
+                2,10,0,0,0,0
             }),
-            //yellow and blue make green
-            new CraftRecipe(4,
+            //sight vial
+            new CraftRecipe(14,
             new int[] {
-                6,3,0,0,0,0
+                2,3,0,0,0,0
             }),
-            //blue and green make teal
-            new CraftRecipe(5,
+            //purification potion
+            new CraftRecipe(15,
             new int[] {
-                4,6,6,0,0,0
+                10,8,5,0,0,0
             }),
-            //blue and red make purple
-            new CraftRecipe(7,
+            //healing flask
+            new CraftRecipe(16,
             new int[]{
-                1,6,0,0,0,0
+                3,4,15,0,0,0
+            }),
+            //philter of strength
+            new CraftRecipe(17,
+            new int[]{
+                12,12,6,0,0,0
+            }),
+            //vial of vitality
+            new CraftRecipe(18,
+            new int[]{
+                3,3,3,1,1,7
+            }),
+            //potion of growth
+            new CraftRecipe(19,
+            new int[]{
+                17,18,11,11,11,11
             })
         };
     }
