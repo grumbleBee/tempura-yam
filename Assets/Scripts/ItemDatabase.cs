@@ -24,40 +24,63 @@ public class ItemDatabase : MonoBehaviour {
     {
         items = new List<Item>()
         {
-            new Item(1, "Blue Poplar", "", Resources.Load<Sprite>("Icons/BluePoplar"),
+            //-------------------------------------//
+            //              PLANTS
+            //------------------------------------//
+            //pine
+            new Item(1, "Blue Poplar", "Loves shade.", Resources.Load<Sprite>("Icons/BluePoplar"),
             new Dictionary<string, int> {
             }),
-            new Item(2, "Cutleaf Rosemary", "", Resources.Load<Sprite>("Icons/CutleafRosemary"),
+            //forest
+            new Item(2, "Cutleaf Rosemary", "Leaves are delicious, and bark can be made into tea.", Resources.Load<Sprite>("Icons/CutleafRosemary"),
             new Dictionary<string, int> {
             }),
-            new Item(3, "Dame's Harlequin", "", Resources.Load<Sprite>("Icons/DamesHarlequin"),
+            //common
+            new Item(3, "Dame's Harlequin", "All parts of this common plant can be used.", Resources.Load<Sprite>("Icons/DamesHarlequin"),
             new Dictionary<string, int> {
             }),
-            new Item(4, "Desert Feverfew", "", Resources.Load<Sprite>("Icons/DesertFeverfew"),
+            //desert
+            new Item(4, "Desert Feverfew", "Thrives in hot, dry climates.", Resources.Load<Sprite>("Icons/DesertFeverfew"),
             new Dictionary<string, int> {
             }),
-            new Item(5, "Downy Redbud", "test", Resources.Load<Sprite>("Icons/DownyRedbud"),
+            //desert (closer to ff)
+            new Item(5, "Downy Redbud", "Watch out for thorns!", Resources.Load<Sprite>("Icons/DownyRedbud"),
             new Dictionary<string, int> {
             }),
-            new Item(6, "Milky Shadebush", "", Resources.Load<Sprite>("Icons/MilkyShadebush"),
+            //mountain (actual mountain)
+            new Item(6, "Milky Shadebush", "Usually found at high elevations.", Resources.Load<Sprite>("Icons/MilkyShadebush"),
             new Dictionary<string, int> {
             }),
-            new Item(7, "Night Dewberry", "", Resources.Load<Sprite>("Icons/NightDewberry"),
+            //pine/ff
+            new Item(7, "Night Dewberry", "Only blooms at night.", Resources.Load<Sprite>("Icons/NightDewberry"),
             new Dictionary<string, int> {
             }),
-            new Item(8, "Queen's Ribwort", "", Resources.Load<Sprite>("Icons/QueensRibwort"),
+            //forest
+            new Item(8, "Queen's Ribwort", "Poisonous to most animals.", Resources.Load<Sprite>("Icons/QueensRibwort"),
             new Dictionary<string, int> {
             }),
-            new Item(9, "Sandy Amaryllis", "", Resources.Load<Sprite>("Icons/SandyAmaryllis"),
+            //beach
+            new Item(9, "Sandy Amaryllis", "Can only grow in warm climates.", Resources.Load<Sprite>("Icons/SandyAmaryllis"),
             new Dictionary<string, int> {
             }),
-            new Item(10, "Spring Eranthis", "", Resources.Load<Sprite>("Icons/SpringEranthis"),
+            //common
+            new Item(10, "Spring Eranthis", "Very hardy and easy to grow.", Resources.Load<Sprite>("Icons/SpringEranthis"),
             new Dictionary<string, int> {
             }),
-            new Item(11, "Water Island Lavender", "", Resources.Load<Sprite>("Icons/WaterIslandLavender"),
+            //beach/ff
+            new Item(11, "Water Island Lavender", "Smells amazing, but tastes like soap.", Resources.Load<Sprite>("Icons/WaterIslandLavender"),
             new Dictionary<string, int> {
             }),
-            new Item(12, "Yellowbark Briar", "", Resources.Load<Sprite>("Icons/YellowbarkBriar"),
+            //mountain (river)
+            new Item(12, "Yellowbark Briar", "Grows in damp, sandy ground.", Resources.Load<Sprite>("Icons/YellowbarkBriar"),
+            new Dictionary<string, int> {
+            }),
+
+            //-------------------------------------//
+            //              POTIONS
+            //------------------------------------//
+            //dame's harlequin + cutleaf rosemary = 
+            new Item(13, "Sleep Serum", "Smells sweet.", Resources.Load<Sprite>("Potions/Bottle8"),
             new Dictionary<string, int> {
             })
         };

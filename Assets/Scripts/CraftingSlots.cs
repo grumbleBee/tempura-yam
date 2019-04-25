@@ -7,6 +7,7 @@ public class CraftingSlots : MonoBehaviour {
     private List<UIItem> uiItems = new List<UIItem>();
     public UIItem craftResultSlot;
 
+
     public void UpdateRecipe()
     {
         int[] itemTable = new int[uiItems.Count];
